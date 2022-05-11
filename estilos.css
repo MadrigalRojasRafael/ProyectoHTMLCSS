@@ -1,0 +1,154 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.bodyIndex{
+    background-image: linear-gradient(130deg,
+    #000000,#070713,#0D0D26,#141439,#1A1A4C,#212060,#272673,#2D2C87,#33319B,#3837AE,
+    #373AAE,#31349B,#2C2E87,#262873,#202260,#1A1B4C,#141539,#0D0E26,#070713,#000000
+    );
+    background-size: 600%;
+    animation: AnimBack 12s infinite;
+}
+
+.bodyQueEsDS{
+    background-image: linear-gradient(40deg,
+    #000000,#0F0614,#1F0B28,#2E113B,#3E1650,#4D1C64,#5D2178,#6C268D,#7C2BA1,#8C30B6,
+    #7C2BA1,#6C268D,#5D2178,#4D1C64,#3E1650,#2E113B,#1F0B28,#0F0614,#000000
+    );
+    background-size: 600%;
+    animation: AnimBack 12s infinite;
+}
+
+.bodyOfAcDS{
+    background-image: linear-gradient(40deg,
+    #000000,#060E14,#163950,#1C4864,#215678,#26658D,#2B73A1,#3082B6,#2B73A1,
+    #26658D,#215678,#1C4864,#163950,#112B3B,#0B1D28,#060E14,#000000
+    );
+    background-size: 600%;
+    animation: AnimBack 12s infinite;
+}
+
+.bodyOfLabDS{
+    background-image: linear-gradient(40deg,
+    #000000,#061411,#0B2823,#113B34,#165046,#1C6458,#217869,#268D7B,#2BA18D,#30B69F,
+    #2BA18D,#268D7B,#217869,#1C6458,#165046,#113B34,#0B2823,#061411,#000000
+    );
+    background-size: 600%;
+    animation: AnimBack 12s infinite;
+}
+
+footer{
+    background: linear-gradient(rgba(25,25,25,0.76), rgba(25,25,25,0.76));
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: aliceblue;
+}
+
+span{
+    display: block;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 85px;
+    white-space: nowrap;
+    border-right: 2px solid whitesmoke;
+    width: 12ch;
+    animation: typing 2s steps(12), blink 0.5s infinite step-end alternate;
+    overflow: hidden;
+    text-align: center;
+}
+
+.texto{
+    color: white;
+    text-align: center;
+    margin: 15%;
+    font-size: 35px;
+}
+
+.center{
+    text-align: center;
+    font-size: 30px;
+}
+
+.button1{
+    background: linear-gradient(1120deg, rgba(197,177,231,0.5) 60%,rgba(211,196,237,0.5) 40%);
+    color: whitesmoke;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 0.25rem;
+    min-width: 200px;
+    text-decoration: none;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
+    animation: pulse 1.8s infinite;
+}
+
+.button2{
+    background: linear-gradient(1120deg, rgba(197,177,231,0.5) 60%,rgba(211,196,237,0.5) 40%);
+    color: whitesmoke;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 0.25rem;
+    min-width: 200px;
+    text-decoration: none;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
+    animation: pulse 1.8s infinite;
+}
+
+.button3{
+    background: linear-gradient(1120deg, rgba(197,177,231,0.5) 60%,rgba(211,196,237,0.5) 40%);
+    color: whitesmoke;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 0.25rem;
+    min-width: 200px;
+    text-decoration: none;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
+    animation: pulse 1.8s infinite;
+}
+
+@keyframes pulse {
+    0%{
+        transform: scale(1);
+        box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1);
+    }
+    25%{
+        transform: scale(0.99);
+        box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.1);
+    }
+    50%{
+        transform: scale(0.98);
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.05);
+    }
+    75%{
+        transform: scale(0.99);
+        box-shadow: 0 0 0 6px rgba(255, 255, 255, 0);
+    }
+    100%{
+        transform: scale(1);
+        box-shadow: 0 0 0 3px rgba(255, 255, 255, 0);
+    }
+}
+
+@keyframes typing {
+    from{
+        width: 0ch;
+    } 
+}
+
+@keyframes blink {
+    55%{
+        border-color: transparent;
+    }
+}
+
+@keyframes AnimBack {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
