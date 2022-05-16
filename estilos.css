@@ -6,20 +6,28 @@
 
 .bodyIndex{
     background-image: linear-gradient(130deg,
-    #000000,#070713,#0D0D26,#141439,#1A1A4C,#212060,#272673,#2D2C87,#33319B,#3837AE,
-    #373AAE,#31349B,#2C2E87,#262873,#202260,#1A1B4C,#141539,#0D0E26,#070713,#000000
-    );
+    #283D71,#2E4784,#345198,#3A5BAB,#4065BF,#5274C6,#6584CD,#7893D4,#8AA2DA,
+    #7893D4,#6584CD,#5274C6,#4065BF,#3A5BAB,#345198,#2E4784,#283D71);
     background-size: 600%;
-    animation: AnimBack 12s infinite;
+    animation: AnimBack 6s infinite;
 }
 
 .bodyQueEsDS{
     background-image: linear-gradient(40deg,
-    #000000,#0F0614,#1F0B28,#2E113B,#3E1650,#4D1C64,#5D2178,#6C268D,#7C2BA1,#8C30B6,
-    #7C2BA1,#6C268D,#5D2178,#4D1C64,#3E1650,#2E113B,#1F0B28,#0F0614,#000000
+    #000000,#070713,#0D0D26,#141439,#1A1A4C,#212060,#272673,#2D2C87,#33319B,#3837AE,
+    #373AAE,#31349B,#2C2E87,#262873,#202260,#1A1B4C,#141539,#0D0E26,#070713,#000000
     );
-    background-size: 600%;
-    animation: AnimBack 12s infinite;
+    background-size: 700%;
+    animation: AnimBack 10s infinite;
+}
+
+.bodyQueHace1DS{
+    background-image: linear-gradient(40deg,
+    #000000,#0B0713,#160D26,#221439,#2D1A4C,#382060,#432673,#4E2C87,#59319B,#6437AE,
+    #59319B,#4E2C87,#432673,#382060,#2D1A4C,#221439,#160D26,#0B0713,#000000
+    );
+    background-size: 700%;
+    animation: AnimBack 10s infinite;
 }
 
 .bodyOfAcDS{
@@ -27,8 +35,8 @@
     #000000,#060E14,#163950,#1C4864,#215678,#26658D,#2B73A1,#3082B6,#2B73A1,
     #26658D,#215678,#1C4864,#163950,#112B3B,#0B1D28,#060E14,#000000
     );
-    background-size: 600%;
-    animation: AnimBack 12s infinite;
+    background-size: 700%;
+    animation: AnimBack 10s infinite;
 }
 
 .bodyOfLabDS{
@@ -36,109 +44,246 @@
     #000000,#061411,#0B2823,#113B34,#165046,#1C6458,#217869,#268D7B,#2BA18D,#30B69F,
     #2BA18D,#268D7B,#217869,#1C6458,#165046,#113B34,#0B2823,#061411,#000000
     );
-    background-size: 600%;
-    animation: AnimBack 12s infinite;
+    background-size: 700%;
+    animation: AnimBack 10s infinite;
+}
+
+span{
+    font-weight: bold;
+    font-style: italic;
+}
+
+header{
+    background:  linear-gradient(rgba(25,25,25,0.85), rgba(25,25,25,0.85));
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: aliceblue;
+    width: 100%;
+    clear: both;
+    content: '';
+    display: flex;
+}
+
+nav{
+    float: right;
+}
+
+nav ul li{
+    list-style: none;
+    margin-left: 45px;
+    margin-right: 45px;
+    padding: 25px 0;
+    float: left;
+    position: relative;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: lavender;
+    font-size: 20px;
+}
+
+header nav ul li a::before{
+    display: block;
+    content: '';
+    background: lavender;
+    width: 0%;
+    height: 5px;
+    top: 0;
+    position: absolute;
+    transition: width 0.5s;
+}
+
+footer nav ul li a::before{
+    display: block;
+    content: '';
+    background: beige;
+    width: 0%;
+    height: 5px;
+    top: 0;
+    position: absolute;
+    transition: width 0.7s;
+}
+
+nav ul li a:hover::before{
+    width: 100%;
 }
 
 footer{
-    background: linear-gradient(rgba(25,25,25,0.76), rgba(25,25,25,0.76));
+    background: linear-gradient(rgba(25,25,25,0.85), rgba(25,25,25,0.85));
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: aliceblue;
 }
 
-span{
-    display: block;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 85px;
-    white-space: nowrap;
-    border-right: 2px solid whitesmoke;
-    width: 12ch;
-    animation: typing 2s steps(12), blink 0.5s infinite step-end alternate;
-    overflow: hidden;
+.titulo{
+    color: rgba(225, 245, 245, 0.9);
     text-align: center;
-}
-
-.texto{
-    color: white;
-    text-align: center;
-    margin: 15%;
-    font-size: 35px;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-top: 6%;
+    margin-bottom: 8%;
+    font-size: 45px;
 }
 
 .center{
     text-align: center;
+    font-size: 32px;
+}
+
+.limAc{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 0%;
+    padding-bottom: 97%;
+}
+
+.limLab{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 0%;
+    padding-bottom: 30%;
+}
+
+.tab1,.tab2,.tab3,.tab4,.tab5,.tab6 img{
+    text-align: center;
+} 
+
+.info{
+    text-align: justify;
     font-size: 30px;
+    color: lavender;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 0.1%;
+    margin-right: 0.1%;
 }
 
-.button1{
-    background: linear-gradient(1120deg, rgba(197,177,231,0.5) 60%,rgba(211,196,237,0.5) 40%);
-    color: whitesmoke;
-    display: inline-block;
-    padding: 1rem 2rem;
-    border-radius: 0.25rem;
-    min-width: 200px;
+.subtitulo{
+    text-align: center; 
+    font-weight: bold; 
+    font-size: 40px;
+    color: white;
+}
+
+.menu{
+    margin: 0 auto;
+}
+
+.resaltado{
+    text-align: center;
     text-decoration: none;
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
-    animation: pulse 1.8s infinite;
+    font-weight: bold;
+    color: rgb(45, 147, 194);
 }
 
-.button2{
-    background: linear-gradient(1120deg, rgba(197,177,231,0.5) 60%,rgba(211,196,237,0.5) 40%);
-    color: whitesmoke;
-    display: inline-block;
-    padding: 1rem 2rem;
-    border-radius: 0.25rem;
-    min-width: 200px;
+.resaltadoLab{
+    text-align: center;
     text-decoration: none;
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
-    animation: pulse 1.8s infinite;
+    font-weight: bold;
+    color: rgb(21, 163, 144);
 }
 
-.button3{
-    background: linear-gradient(1120deg, rgba(197,177,231,0.5) 60%,rgba(211,196,237,0.5) 40%);
+.buttonLink{
+    transition: all 0.8s ease;
+    
+}
+
+/*Inicio Barra*/
+.container{
+    width: 100%;
+    max-width: 90%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.lbl-menu{
+    background: rgba(235,235,235,0.60);
+}
+
+.lbl-menu label{
+    display: inline-flex;
+    padding: 20px;
+    color: rgba(235,235,235,0.6);
+    cursor: pointer;
+    transition: all 0.8s ease;
+}
+
+.lbl-menu label:hover{
+    background: rgba(255,255,255,0.65);
+}
+
+.content{
+    position: relative;
+}
+
+.content div{
+    position: absolute;
+    line-height: 1.8;
+    transition: all 0.8s ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.90);
+    padding: 50px;
+    background: rgba(255,255,255,0.85);
+}
+
+#radio1,#radio2,#radio3,#radio4,#radio5,#radio6{
+    display: none;
+}
+
+#radio1:checked ~ .tab1,#radio2:checked ~ .tab2,#radio3:checked ~ .tab3,#radio4:checked ~ .tab4,#radio5:checked ~ .tab5,#radio6:checked ~ .tab6{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+.content div:after{
+    position: absolute;
+    content: "";
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    bottom: 100%;
+    left: 28px;
+}
+/*Fin Barra*/
+
+#welcome{
+    min-height: 100vh;
+    position: relative;
+
+}
+
+.textoIndex{
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    position: relative;
+    z-index: 2;
     color: whitesmoke;
-    display: inline-block;
-    padding: 1rem 2rem;
-    border-radius: 0.25rem;
-    min-width: 200px;
-    text-decoration: none;
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
-    animation: pulse 1.8s infinite;
 }
 
-@keyframes pulse {
-    0%{
-        transform: scale(1);
-        box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1);
-    }
-    25%{
-        transform: scale(0.99);
-        box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.1);
-    }
-    50%{
-        transform: scale(0.98);
-        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.05);
-    }
-    75%{
-        transform: scale(0.99);
-        box-shadow: 0 0 0 6px rgba(255, 255, 255, 0);
-    }
-    100%{
-        transform: scale(1);
-        box-shadow: 0 0 0 3px rgba(255, 255, 255, 0);
-    }
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-@keyframes typing {
-    from{
-        width: 0ch;
-    } 
-}
-
-@keyframes blink {
-    55%{
-        border-color: transparent;
-    }
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(55, 55, 55, 0.9);
+    opacity: 0.9;
+    mix-blend-mode: overlay;
 }
 
 @keyframes AnimBack {
